@@ -1,4 +1,4 @@
-let btn = $(`.header__icon i`);
+const btn = $(`.header__icon i`);
 
 $(`.header__icon`).click(function() {
 	if(btn.hasClass(`fa fa-bars`))
@@ -12,4 +12,4 @@ $(`.header__icon`).click(function() {
 		$(`.nav__menu`).css(`left`,`-255px`);
 		btn.removeClass(`fa fa-times`).addClass(`fa fa-bars`);
 	}
-})
+});

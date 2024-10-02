@@ -1,21 +1,7 @@
 @font-face {
-    font-family: "TTNorms";
-    src: url("../fonts/TTNorms-Regular.otf") format("openType");
+    font-family: Vazir;
+    src: url("../fonts/Vazirmatn-Regular.woff2");
 }
-@font-face {
-    font-family: "TTNorms Medium";
-    src: url("../fonts/TTNorms-Medium.otf") format("openType");
-}
-@font-face {
-    font-family: "TTNorms Light";
-    src: url("../fonts/TTNorms-Light.otf") format("openType");
-}
-
-@font-face {
-    font-family: "Times Roman Italic";
-    src: url("../fonts/Times-new-roman-italic.ttf") format("truetype");
-}
-
 
 html {
     line-height: 1.15;
@@ -48,6 +34,8 @@ pre {
 
 a {
     background-color: transparent;
+    text-decoration: none;
+    color: inherit;
 }
 
 abbr[title] {
@@ -210,15 +198,15 @@ html {
 }
 
 body {
-    font-family: "TTNorms";
+    font-family: Vazir;
 }
 
 .container {
     max-width: 80rem;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 1rem;
-    padding-left: 1rem;
+    margin-inline-end: auto;
+    margin-inline-start: auto;
+    padding-inline-end: 1rem;
+    padding-inline-start: 1rem;
 }
 
 .header{
@@ -273,7 +261,6 @@ body {
 
 .header__title{
     color: #081D43;
-    font-family: 'TTNorms Medium';
     font-weight: normal;
     line-height: 2.5rem;
     font-size: 2.5rem;
@@ -325,7 +312,7 @@ body {
 }
 
 .main{
-    padding-top: 3rem;
+    padding-block-start: 3rem;
 }
 
 .works{
@@ -341,7 +328,6 @@ body {
 
 .works__title,.portfolio-title{
     color: #081D43;
-    font-family: "TTNorms Medium";
     font-weight: normal;
     font-size: 1.8rem;
 }
@@ -380,7 +366,6 @@ body {
 }
 
 .person-comments__title{
-    font-family: "TTNorms Medium";
     font-weight: normal;
     margin-block-start: 0;
     font-size: 1.8rem;
@@ -390,7 +375,6 @@ body {
     color: #7e8085;
     background-color: #fff;
     border-radius: 0.3rem;
-    font-family: 'Times Roman Italic';
     margin: 1rem;
     display: flex;
     flex-direction: column;
@@ -407,7 +391,7 @@ body {
 
 .box-comments__content{
     padding: 1rem;
-    text-align: left;
+    text-align: start;
     line-height: 2rem;
     margin: 0;
 }
@@ -417,16 +401,15 @@ body {
     padding: 0.8rem;
     border-top: 1px solid #E8EBEF;
     align-items: center;
+    gap: 12px;
 }
 
 .box-comments__name{
     color: black;
     margin: 0 0 0 0.5rem;
-    font-family: "TTNorms";
 }
 
 .person-comments__text{
-    font-family: "TTNorms Light";
     max-width: 28rem;
     margin: 0 auto;
     line-height: 1.5rem;
@@ -456,14 +439,14 @@ body {
     padding: 5rem 0;
 }
 
-.portfolio-items{
+/*.portfolio-items{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 3rem;
     margin-block-start: 3rem;
-}
+}*/
 
 .portfolio-item{
     flex-basis: 23rem;
@@ -487,6 +470,7 @@ body {
 
 .news-wrapper{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
@@ -696,4 +680,133 @@ body {
     .news__email__button{
          padding: 1rem 1.2rem;
     }
+}
+
+/*.head{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    direction: rtl;
+}*/
+
+.show-all{
+    color: #1E88E5;
+}
+
+.section__title-icon{
+    width: 22px;
+    height: 22px;
+    color: #1E88E5;
+}
+
+.box-portfolio-items{
+    display: flex;
+    gap: 24px;
+}
+
+.box-poportfolio{
+    display: flex;
+/*    flex-wrap: wrap;*/
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.box-1, .box-2, .box-3, .box-4{
+    background-color: white;
+    padding: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+    transition: 0.50s;
+    cursor: pointer;
+}
+
+.box-1:hover{
+    transform: scale(1.1);
+}
+
+.box-2:hover{
+    transform: scale(1.1);
+}
+
+.box-3:hover{
+    transform: scale(1.1);
+}
+
+.box-4:hover{
+    transform: scale(1.1);
+}
+
+.img{
+    width: 100%;
+}
+
+h4{
+    font-size: 14px;
+    line-height: 1.5;
+    margin-block-start: 20px;
+    font-weight: normal;
+}
+
+.offer{
+    margin-block-start: 24px;
+}
+
+.value{
+    color: #1976D2;
+    background-color: #E3F2FD;
+    border-radius: 4px;
+    font-weight: bold;
+    padding: 2px 4px;
+    font-size: 14px;
+}
+
+.price-old{
+    text-decoration: line-through;
+    color: #546E7A;
+    font-size: 14px;
+}
+
+.new-price{
+    display: inline-block;
+}
+
+.new-value{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.unit{
+    font-size: 14px;
+}
+
+.product__rating-icon{
+    width: 18px;
+    height: 18px;
+    color: #f1c21b;
+}
+
+.rating{
+    display: flex;
+    align-items: center;
+}
+
+.new{
+    display: flex;
+    justify-content: space-between;
+}
+
+.point{
+    font-size: 14px;
+    color: #546E7A;
+}
+
+.new-items{
+    display: flex;
+    align-items: center;
+}
+
+.contact-information{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
