@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" /> -->
     <link rel="stylesheet" href="styles/style.css" />
     <script src="scripts/jquery-3.7.1.min.js" defer></script>
-    <script src="scripts/app.js" defer></script>
+    <script src="scripts/script.js" defer></script>
 </head>
 
 <body>
@@ -21,21 +21,32 @@
                         <img src="images/Interactive-ART.png" alt="Logo">
                     </div>
                     <div class="nav__menu">
+                        <h2 class="header-nav-menu">کافی نت MSI</h2>
                         <li class="menu__item">
                             <a href="#" class="menu__link">خانه</a>
                         </li>
                         <li class="menu__item">
                             <a href="#" class="menu__link">درباره ما</a>
                         </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">تماس با ما</a>
+                        </li>
                     </div>
                 </nav>
-                <a href="#" class="header__link">تماس با ما</a>
-                <div class="header__icon"><i class="fa fa-bars"></i></div>
+                <a href="#" class="header__link" hidden>تماس با ما</a>
+                <div class="header__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                    </svg>
+                </div>
             </section>
             <section class="header-bottom">
                 <div class="header-content">
                     <div class="header__right">
-                        <div class="header__right__wrapper">
+                        <div class="header__right__wrapper lazy-loading">
                             <h1 class="header__title">
                                 کافی نت MIS
                             </h1>
@@ -49,7 +60,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="header__left">
+                    <div class="header__left lazy-loading">
                         <img src="images/header-img.svg" alt="" class="header__left__img">
                     </div>
                 </div>
@@ -58,7 +69,7 @@
     </header>
     <main class="main">
         <section class="works">
-            <div class="container">
+            <div class="container lazy-loading">
                 <!-- <h5 class="works__text">HOW IT WORK</h5> -->
                 <h2 class="works__title">خدمات ما</h2>
                 <div class="works__content">
@@ -82,12 +93,12 @@
                     </div>
                 </div>
                 <div class="work-img">
-                    <img src="images/main-img.svg" alt="work im" class="work-img__img">
+                    <img src="images/main-img.svg" alt="work im" class="work-img__img lazy-loading">
                 </div>
             </div>
         </section>
         <section class="person-comments">
-            <div class="container">
+            <div class="container lazy-loading">
                 <h2 class="person-comments__title">نظرات شما</h2>
                 <!-- <p class="person-comments__text">There are many variations of passages of Lorem Ipsum available, but the
                 majority have suffered.</p> -->
@@ -142,7 +153,7 @@
         </section>
         <section class="portfolio">
             <div class="container">
-                <div class="portfolio-wrapper">
+                <div class="portfolio-wrapper lazy-loading">
                     <h2 class="portfolio-title">محصولات ما</h2>
                     <div class="row">
                         <div class="product">
@@ -272,7 +283,7 @@
         <section class="copy-right">
             <div class="container">
                 <div class="copy-right__wrapper">
-                    <div class="copy-right__text">Copyright © 2024-2024</div>
+                    <div class="copy-right__text">Copy Right © 2024-2024</div>
                     <div class="copy-right-company">Network Cafe MSI All Rights Reserved</div>
                 </div>
             </div>
