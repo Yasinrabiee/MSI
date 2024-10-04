@@ -14,17 +14,15 @@ $(`.header__icon svg`).click(function() {
 	}
 });
 
-const lazyLoadingElem = $(`.lazy-loading`);
-console.log(lazyLoadingElem);
+const lazyLoadingElements = $(`.lazy-loading`);
 
 function loadElements() {
-	lazyLoadingElem.each(function() {
-		const elem = $(this);
-		if(elem.offset().top < $(window).scrollTop() + $(window).height())
-			elem.addClass(`loaded`);
+	lazyLoadingElements.each(function() {
+		const element = $(this);
+		if(element.offset().top < $(window).scrollTop() + $(window).height())
+			element.addClass(`loaded`);
 	});
 }
-
 loadElements();
 
 $(window).on(`scroll`, function() {

@@ -2,12 +2,11 @@
 <html lang="en" dir="rtl">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Project</title>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" /> -->
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/style.css"/>
     <script src="scripts/jquery-3.7.1.min.js" defer></script>
     <script src="scripts/script.js" defer></script>
 </head>
@@ -71,7 +70,12 @@
         <section class="works">
             <div class="container lazy-loading">
                 <!-- <h5 class="works__text">HOW IT WORK</h5> -->
-                <h2 class="works__title">خدمات ما</h2>
+                <div class="portfolio-title-container">
+                    <h2 class="portfolio-title">
+                       <span class="portfolio-title-span">خدمات ما</span> 
+                    </h2>
+                    <hr class="portfolio-title-hr">
+                </div>
                 <div class="works__content">
                     <div class="works__content__item">
                         <!-- <h4 class="item-header">Research Project</h4> -->
@@ -154,7 +158,12 @@
         <section class="portfolio">
             <div class="container">
                 <div class="portfolio-wrapper lazy-loading">
-                    <h2 class="portfolio-title">محصولات ما</h2>
+                    <div class="portfolio-title-container">
+                        <h2 class="portfolio-title">
+                            <span class="portfolio-title-span">محصولات ما</span>
+                        </h2>
+                        <hr class="portfolio-title-hr">
+                    </div>
                     <div class="row">
                         <div class="product">
                             <img src="images/img1.jpg" class="product__image" alt="product">
@@ -264,19 +273,9 @@
         <section class="news">
             <div class="container">
                 <div class="news-wrapper">
-                    <div class="news__text" style="margin: 0 auto;">
-                        <h3 class="news__text__content">اطلاعات تماس</h3>
-                    </div>
-                    <!-- <div class="news__email">
-                        <input type="text" placeholder="Email address" class="news__email__input">
-                        <button class="news__email__button">
-                            <img src="images/right-arrow.svg" alt="btn" class="news__email__svg">
-                        </button>
-                    </div> -->
-                    <div class="contact-information">
-                        <div>شماره تلفن: <a href="tel:+09121234567">09121234567</a></div>
-                        <div>ایمیل: <a href="mailto:example@example.com">example@example.com</a></div>
-                    </div>
+                    <div class="news__text__content">اطلاعات تماس</div>
+                    <div class="information-tel">شماره تلفن: <a href="tel:+09121234567">09121234567</a></div>
+                    <div class="information-email">ایمیل: <a href="mailto:example@example.com">example@example.com</a></div>
                 </div>
             </div>
         </section>

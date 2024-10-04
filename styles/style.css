@@ -280,7 +280,7 @@ body {
 }
 
 .header__btn a {
-    background-color: #0050C8;
+    background-color: #1976D2;
     padding: 0.8rem 1.5em;
     color: #fff;
     border-radius: 0.3rem;
@@ -289,10 +289,6 @@ body {
     display: block;
     width: 10rem;
     text-align: center;
-}
-
-.header__btn:nth-child(1) {
-    background-color: #87BC25;
 }
 
 .header__left {
@@ -336,7 +332,7 @@ body {
 
 .portfolio-title {
     display: block;
-    margin-block-end: 3rem;
+    margin-block-end: 0;
 }
 
 .works__content {
@@ -367,7 +363,8 @@ body {
 }
 
 .person-comments {
-    background-color: #2F5BEA;
+/*    background-color: #2F5BEA;*/
+    background-color: #0277BD;
     color: #fff;
     text-align: center;
     padding: 5rem 0;
@@ -466,9 +463,10 @@ body {
 }
 
 .news {
-    background-color: rgb(44, 87, 228);
+    background-color: #0277BD;
     color: #fff;
     padding: 6.5rem 0;
+    display: flex;
 }
 
 .news__text__content {
@@ -479,8 +477,14 @@ body {
 .news-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
+    gap: 36px;
+/*    justify-content: space-between;*/
+    height: 100%;
+}
+
+.information-tel, .information-email {
+    font-size: 20px;
 }
 
 /*.news__email__button {
@@ -557,7 +561,8 @@ body {
     top: 0;
     right: -300px;
     bottom: 0;
-    background-color: #3f70e1;
+/*    background-color: #3f70e1;*/
+    background-color: #03A9F4;
     flex-direction: column;
     gap: 1.5rem;
     width: 300px;
@@ -846,4 +851,17 @@ body {
 .loaded {
     opacity: 1;
     transform: translateY(0px);
+}
+
+.portfolio-title-span {
+    color: #fff;
+    background: linear-gradient(to right, #1565C0, #0D47A1);
+    margin-block-end: 0;
+    padding: 2px 50px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+}
+
+.portfolio-title-container {
+    margin-block-end: 5rem;
 }
