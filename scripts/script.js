@@ -23,6 +23,7 @@ function loadElements() {
 			element.addClass(`loaded`);
 	});
 }
+
 loadElements();
 
 $(window).on(`scroll`, function() {
