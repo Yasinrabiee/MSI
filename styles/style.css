@@ -741,7 +741,7 @@ body {
     text-decoration: none;
 }
 
-.row {
+.row, .movies {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -844,7 +844,7 @@ body {
 
 .lazy-loading {
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(150px);
     transition: opacity 1.5s ease, transform 1.5s ease;
 }
 
@@ -864,4 +864,36 @@ body {
 
 .portfolio-title-container {
     margin-block-end: 5rem;
+}
+
+.movies {
+/*    margin-block-start: 15rem;*/
+}
+
+.movies-wrapper {
+    text-align: right;
+    gap: 12px;
+}
+
+.movies-wrapper div {
+    margin-block-end: 16px;
+}
+
+.movies-name {
+    margin-block-start: 20px;
+    margin-block-end: 20px;
+    font-size: 20px;
+}
+
+.movies-rating {
+    display: flex;
+/*    justify-content: end;*/
+    justify-content: space-between;
+    align-items: center;
+}
+
+.movies-rating-star {
+    display: flex;
+    align-items: center;
+    gap: 4px;
 }

@@ -29,3 +29,10 @@ loadElements();
 $(window).on(`scroll`, function() {
 	loadElements();
 });
+
+$(`.header__btn, .menu__link`).click(function() {
+	$(`.nav__menu`).css(`right`,`-300px`);
+	$(`html, body`).animate({
+		scrollTop: 4500
+	},1500);
+});
