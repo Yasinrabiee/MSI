@@ -355,7 +355,7 @@ body {
 .work-img {
     max-width: 32rem;
     margin: 0 auto;
-    margin-block-end: 6rem;
+/*    margin-block-end: 10rem;*/
 }
 
 .work-img__img {
@@ -910,11 +910,16 @@ body {
 select {
     background-color: dodgerblue;
     color: white;
-    padding: 0px 8px;
+    padding: 0px 4px;
     border-radius: 4px;
-    font-size: 20px;
+    font-size: 18px;
+    text-align: center;
 }
 
 .sort-label {
     font-size: 20px;
+}
+
+.portfolio-title-hr {
+    max-width: 80rem;
 }

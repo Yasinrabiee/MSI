@@ -54,7 +54,7 @@
                                 که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
                                 کاربردی می باشد</div>
                             <div class="header__btn">
-                                <a href="#" class="header__btn">تماس با ما</a>
+                                <a href="#" class="header__btn-link">تماس با ما</a>
                                 <!-- <a href="#" class="header__btn">See our works</a> -->
                             </div>
                         </div>
@@ -100,12 +100,11 @@
                     <img src="images/main-img.svg" alt="work im" class="work-img__img lazy-loading">
                 </div>
             </div>
-        </section>
-        <section class="person-comments">
+        <!-- <section class="person-comments">
             <div class="container lazy-loading">
                 <h2 class="person-comments__title">نظرات شما</h2>
-                <!-- <p class="person-comments__text">There are many variations of passages of Lorem Ipsum available, but the
-                majority have suffered.</p> -->
+                <p class="person-comments__text">There are many variations of passages of Lorem Ipsum available, but the
+                majority have suffered.</p>
                 <div class="comment-container">
                     <div class="box-comments">
                         <div class="comment">
@@ -145,18 +144,19 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="companies">
+                    <div class="companies">
                         <img src="images/logo-1.svg" alt="" class="companies__img">
                         <img src="images/logo-2.svg" alt="" class="companies__img">
                         <img src="images/logo-3.svg" alt="" class="companies__img">
                         <img src="images/logo-4.svg" alt="" class="companies__img">
                         <img src="images/logo-5.svg" alt="" class="companies__img">
-                    </div> -->
+                    </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <section class="portfolio">
             <div class="container">
+        </section>
                 <div class="portfolio-wrapper">
                         <div class="portfolio-title-container">
                             <h2 class="portfolio-title">
@@ -326,17 +326,20 @@
                                 <hr class="portfolio-title-hr">
                                 <br>
                                 <div class="sort">
-                                    <label class="sort-label">دسته بندی:</label>
-                                    <select>
-                                        <option>کمدی</option>
-                                        <option>اکشن</option>
-                                        <option>جنایی</option>
-                                        <option>درام</option>
+                                    <label class="sort-label" for="sort-select">دسته بندی:</label>
+                                    <select id="sort-select">
+                                        <option value="all">همه</option>
+                                        <option value="action">اکشن</option>
+                                        <option value="drama">درام</option>
+                                        <option value="fantasy">فانتزی</option>
+                                        <option value="search">ماجراجویی</option>
+                                        <option value="horror">ترسناک</option>
+                                        <option value="social">اجتماعی</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="movies">
-                                <div class="product lazy-loading">
+                                <div class="product series lazy-loading" data-category="drama">
                                     <img src="images/movies/IMG_20241011_105229_277.jpg" class="product__image" alt="product">
                                     <div class="movies-name" href="#">
                                         سریال دام
@@ -360,13 +363,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="product lazy-loading">
+                                <div class="product series lazy-loading" data-category="fantasy">
                                     <img src="images/movies/IMG_20241011_105229_148.jpg" class="product__image" alt="product">
                                     <div class="movies-name" href="#">
                                         سریال ماجراهای اسپایدرویک
                                     </div>
                                     <div class="movies-wrapper">
-                                        <div>ژانر:&nbsp; اکشن، ماجراجویی، فانتزی، درام</div>
+                                        <div>ژانر:&nbsp; فانتزی</div>
                                         <div>سال ساخت:&nbsp; ۲۰۲۴</div>
                                         <div>رده سنی:&nbsp; ۱۸+</div>
                                         <!-- <div>خلاصه داستان:&nbsp; </div> -->
@@ -384,7 +387,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="product lazy-loading">
+                                <div class="product series lazy-loading" data-category="action">
                                     <img src="images/movies/IMG_20241011_105233_606.jpg" class="product__image" alt="product">
                                     <div class="movies-name" href="#">
                                         سریال آخرین سامورایی
@@ -408,13 +411,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="product lazy-loading">
+                                <div class="product series lazy-loading" data-category="action">
                                     <img src="images/movies/IMG_20241011_105234_268.jpg" class="product__image" alt="product">
                                     <div class="movies-name" href="#">
-                                        سریال آخرین سامورایی
+                                        سریال گل‌های خونی 
                                     </div>
                                     <div class="movies-wrapper">
-                                        <div>ژانر:&nbsp; اکشن، درام، رازآلود </div>
+                                        <div>ژانر:&nbsp; اکشن، درام</div>
                                         <div>سال ساخت:&nbsp; ۲۰۱۳</div>
                                         <div>رده سنی:&nbsp; ۱۳+</div>
                                         <!-- <div>خلاصه داستان:&nbsp;</div> -->
@@ -432,7 +435,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="product lazy-loading">
+                                <div class="product series lazy-loading" data-category="drama">
                                     <img src="images/movies/IMG_20241011_105240_296.jpg" class="product__image" alt="product">
                                     <div class="movies-name" href="#">
                                         سریال گردن زنی
@@ -456,13 +459,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="product lazy-loading">
+                                <div class="product series lazy-loading" data-category="drama">
                                     <img src="images/movies/IMG_20241011_105240_476.jpg" class="product__image" alt="product">
                                     <div class="movies-name" href="#">
                                         سریال زخم کاری
                                     </div>
                                     <div class="movies-wrapper">
-                                        <div>ژانر:&nbsp; جنایی، درام، معمایی، دلهره آور</div>
+                                        <div>ژانر:&nbsp; جنایی، درام</div>
                                         <div>سال ساخت:&nbsp; ۲۰۲۱</div>
                                         <div>رده سنی:&nbsp; ۱۵+</div>
                                         <!-- <div>خلاصه داستان:&nbsp;</div> -->
@@ -480,15 +483,15 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="product lazy-loading">
+                                <div class="product series lazy-loading" data-category="drama">
                                     <img src="images/movies/IMG_20241011_105241_024.jpg" class="product__image" alt="product">
                                     <div class="movies-name" href="#">
                                         سریال غربت
                                     </div>
                                     <div class="movies-wrapper">
-                                        <div>ژانر:&nbsp; درام، جنایی، اجتماعی</div>
+                                        <div>ژانر:&nbsp; درام، جنایی</div>
                                         <div>سال ساخت:&nbsp; ۲۰۲۴</div>
-                                        <div>رده سنی:&nbsp; ۱۸+</div>
+                                        <div>رده سنی:&nbsp; ۱۶+</div>
                                         <!-- <div>خلاصه داستان:&nbsp;</div> -->
                                     </div>
                                     <div class="movies-rating">
@@ -504,7 +507,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="product lazy-loading">
+                                <div class="product series lazy-loading" data-category="action">
                                     <img src="images/movies/IMG_20241011_105244_496.jpg" class="product__image" alt="product">
                                     <div class="movies-name" href="#">
                                         فیلم بازی‌های خماری و گرسنگی
@@ -528,7 +531,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="product lazy-loading">
+                                <div class="product series lazy-loading" data-category="search">
                                     <img src="images/movies/IMG_20241011_105244_896.jpg" class="product__image" alt="product">
                                     <div class="movies-name" href="#">
                                         فیلم مسافر قاچاق
@@ -552,13 +555,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="product lazy-loading">
+                                <div class="product series lazy-loading" data-category="action">
                                     <img src="images/movies/IMG_20241011_105245_021.jpg" class="product__image" alt="product">
                                     <div class="movies-name" href="#">
                                         فیلم نمایش قبل از سپیده دم
                                     </div>
                                     <div class="movies-wrapper">
-                                        <div>ژانر:&nbsp; اکشن، بیوگرافی</div>
+                                        <div>ژانر:&nbsp; اکشن</div>
                                         <div>سال ساخت:&nbsp; ۲۰۱۷</div>
                                         <div>رده سنی:&nbsp; ۱۷+</div>
                                         <!-- <div>خلاصه داستان:&nbsp;</div> -->
@@ -567,6 +570,126 @@
                                         <div>امتیاز:</div>
                                         <div class="movies-rating-star">
                                             <div>۶.۸</div>
+                                            <svg class="product__star-icon" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24" fill="currentColor">
+                                                <path fill-rule="evenodd"
+                                                    d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product series lazy-loading" data-category="horror">
+                                    <img src="images/movies/IMG_20241011_105250_898.jpg" class="product__image" alt="product">
+                                    <div class="movies-name" href="#">
+                                        فیلم اسیر شده
+                                    </div>
+                                    <div class="movies-wrapper">
+                                        <div>ژانر:&nbsp; ترسناک</div>
+                                        <div>سال ساخت:&nbsp; ۲۰۲۴</div>
+                                        <div>رده سنی:&nbsp; ۱۷+</div>
+                                        <!-- <div>خلاصه داستان:&nbsp;</div> -->
+                                    </div>
+                                    <div class="movies-rating">
+                                        <div>امتیاز:</div>
+                                        <div class="movies-rating-star">
+                                            <div>۸.۲</div>
+                                            <svg class="product__star-icon" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24" fill="currentColor">
+                                                <path fill-rule="evenodd"
+                                                    d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product series lazy-loading" data-category="horror">
+                                    <img src="images/movies/IMG_20241011_105251_193.jpg" class="product__image" alt="product">
+                                    <div class="movies-name" href="#">
+                                        فیلم وارث جادوگر
+                                    </div>
+                                    <div class="movies-wrapper">
+                                        <div>ژانر:&nbsp; ترسناک، رازآلود</div>
+                                        <div>سال ساخت:&nbsp; ۲۰۲۱</div>
+                                        <div>رده سنی:&nbsp; ۱۷+</div>
+                                        <!-- <div>خلاصه داستان:&nbsp;</div> -->
+                                    </div>
+                                    <div class="movies-rating">
+                                        <div>امتیاز:</div>
+                                        <div class="movies-rating-star">
+                                            <div>۵.۶</div>
+                                            <svg class="product__star-icon" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24" fill="currentColor">
+                                                <path fill-rule="evenodd"
+                                                    d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product series lazy-loading" data-category="social">
+                                    <img src="images/movies/IMG_20241011_105255_214.jpg" class="product__image" alt="product">
+                                    <div class="movies-name" href="#">
+                                        فیلم انبار
+                                    </div>
+                                    <div class="movies-wrapper">
+                                        <div>ژانر:&nbsp; اجتماعی، کوتاه</div>
+                                        <div>سال ساخت:&nbsp; ۲۰۲۴</div>
+                                        <div>رده سنی:&nbsp; ۱۴+</div>
+                                        <!-- <div>خلاصه داستان:&nbsp;</div> -->
+                                    </div>
+                                    <div class="movies-rating">
+                                        <div>امتیاز:</div>
+                                        <div class="movies-rating-star">
+                                            <div>۶</div>
+                                            <svg class="product__star-icon" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24" fill="currentColor">
+                                                <path fill-rule="evenodd"
+                                                    d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product series lazy-loading" data-category="drama">
+                                    <img src="images/movies/IMG_20241011_105259_272.jpg" class="product__image" alt="product">
+                                    <div class="movies-name" href="#">
+                                        فیلم عشق لی
+                                    </div>
+                                    <div class="movies-wrapper">
+                                        <div>ژانر:&nbsp; درام</div>
+                                        <div>سال ساخت:&nbsp; ۲۰۲۴</div>
+                                        <div>رده سنی:&nbsp; ۱۴+</div>
+                                        <!-- <div>خلاصه داستان:&nbsp;</div> -->
+                                    </div>
+                                    <div class="movies-rating">
+                                        <div>امتیاز:</div>
+                                        <div class="movies-rating-star">
+                                            <div>۸.۹</div>
+                                            <svg class="product__star-icon" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24" fill="currentColor">
+                                                <path fill-rule="evenodd"
+                                                    d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product series lazy-loading" data-category="search">
+                                    <img src="images/movies/IMG_20241011_105259_593.jpg" class="product__image" alt="product">
+                                    <div class="movies-name" href="#">
+                                        فیلم گارودان
+                                    </div>
+                                    <div class="movies-wrapper">
+                                        <div>ژانر:&nbsp; ماجراجویی</div>
+                                        <div>سال ساخت:&nbsp; ۲۰۲۴</div>
+                                        <div>رده سنی:&nbsp; ۱۸+</div>
+                                        <!-- <div>خلاصه داستان:&nbsp;</div> -->
+                                    </div>
+                                    <div class="movies-rating">
+                                        <div>امتیاز:</div>
+                                        <div class="movies-rating-star">
+                                            <div>۷.۱</div>
                                             <svg class="product__star-icon" xmlns="http://www.w3.org/2000/svg"
                                                 viewBox="0 0 24 24" fill="currentColor">
                                                 <path fill-rule="evenodd"

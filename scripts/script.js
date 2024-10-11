@@ -30,9 +30,31 @@ $(window).on(`scroll`, function() {
 	loadElements();
 });
 
-$(`.header__btn, .menu__link`).click(function() {
-	$(`.nav__menu`).css(`right`,`-300px`);
-	$(`html, body`).animate({
-		scrollTop: 4500
-	},1500);
+
+function filterSeries() {
+	const select = document.querySelector(`#sort-select`);
+	const selectedCategory = select.value;
+	const seriesItems = document.querySelectorAll(`.series`);
+	seriesItems.forEach(item => {
+		if(selectedCategory === `all` || item.getAttribute(`data-category`) === selectedCategory) {
+			item.style.display = `block`;
+		}
+		else {
+			item.style.display = `none`;
+		}
+	});
+}
+
+document.querySelector(`#sort-select`).addEventListener(`change`, function() {
+	filterSeries();
 });
+
+$(`.header__btn, .menu__item`).click(function() {
+	menu.toggleClass(`active`)
+	$(`.nav__menu`).css(`right`,`-300px`);
+	$(`.header__icon svg:first-child`).css(`display`, `block`);
+	$(`.header__icon svg:last-child`).css(`display`, `none`);
+	$(`html, body`).animate({
+		scrollTop: $(`.news-wrapper`).offset().top
+	},1500);
+});	
