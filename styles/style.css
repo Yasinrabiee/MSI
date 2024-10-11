@@ -748,6 +748,10 @@ body {
     gap: 24px;
 }
 
+.movies {
+    flex-direction: row-reverse;
+}
+
 .product {
     background-color: #fff;
     width: 286px;
@@ -864,6 +868,7 @@ body {
 
 .portfolio-title-container {
     margin-block-end: 5rem;
+    margin-block-start: 5rem;
 }
 
 .movies {
@@ -877,6 +882,10 @@ body {
 
 .movies-wrapper div {
     margin-block-end: 16px;
+}
+
+.movies-wrapper div:last-child {
+    line-height: 1.5rem;
 }
 
 .movies-name {
@@ -896,4 +905,16 @@ body {
     display: flex;
     align-items: center;
     gap: 4px;
+}
+
+select {
+    background-color: dodgerblue;
+    color: white;
+    padding: 0px 8px;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+.sort-label {
+    font-size: 20px;
 }
