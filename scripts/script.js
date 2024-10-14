@@ -49,7 +49,7 @@ document.querySelector(`#sort-select`).addEventListener(`change`, function() {
 	filterSeries();
 });
 
-$(`.header__btn, .menu__item`).click(function() {
+$(`.header__btn, #menu__link__contact`).click(function() {
 	menu.toggleClass(`active`)
 	$(`.nav__menu`).css(`right`,`-300px`);
 	$(`.header__icon svg:first-child`).css(`display`, `block`);
@@ -58,3 +58,33 @@ $(`.header__btn, .menu__item`).click(function() {
 		scrollTop: $(`.news-wrapper`).offset().top
 	},1500);
 });	
+
+$(`#menu__link__about`).click(function() {
+	menu.toggleClass(`active`)
+	$(`.nav__menu`).css(`right`,`-300px`);
+	$(`.header__icon svg:first-child`).css(`display`, `block`);
+	$(`.header__icon svg:last-child`).css(`display`, `none`);
+	$(`html, body`).animate({
+		scrollTop: $(`.header__title`).offset().top
+	},1500);
+});
+
+$(`#menu__link__product`).click(function() {
+	menu.toggleClass(`active`)
+	$(`.nav__menu`).css(`right`,`-300px`);
+	$(`.header__icon svg:first-child`).css(`display`, `block`);
+	$(`.header__icon svg:last-child`).css(`display`, `none`);
+	$(`html, body`).animate({
+		scrollTop: $(`.row`).offset().top
+	},1500);
+});
+
+$(`#menu__link__movies`).click(function() {
+	menu.toggleClass(`active`)
+	$(`.nav__menu`).css(`right`,`-300px`);
+	$(`.header__icon svg:first-child`).css(`display`, `block`);
+	$(`.header__icon svg:last-child`).css(`display`, `none`);
+	$(`html, body`).animate({
+		scrollTop: $(`.portfolio-title-span-movies`).offset().top
+	},1500);
+});
